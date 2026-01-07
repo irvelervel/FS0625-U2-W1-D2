@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: ABSOLUTE</title>
+    <style>
+      body {
+        background-color: rgb(207, 207, 201);
+        margin: 0;
+      }
+
+      .absolute {
+        position: absolute;
+        background-color: darkcyan;
+        color: white;
+        /* tolgo il margin dal p */
+        margin: 0;
+        /* posiziono l'elemento in cima alla pagina */
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Position: absolute</h2>
+    </header>
+    <main>
+      <p>
+        La proprietà "position" determina il posizionamento di un elemento. Non
+        deve venire intesa come proprietà di "impaginazione" (per quello c'è
+        soprattutto "display"), ma può venire utile in diverse situazioni per
+        alterare la visibilità o il posizionamento di un elemento in
+        particolare, magari in relazione anche agli altri circostanti.
+      </p>
+      <p>
+        Il valore "absolute" permette di definire in maniera "assoluta" (senza
+        riferimenti) la posizione di un elemento, sempre sfruttando le proprietà
+        CSS "top", "bottom", "left" e "right". In particolare specificare ad es.
+        "top: 0" significa ancorarlo al bordo superiore della pagina, mentre
+        "right: 10px" significa posizionarlo a 10px dal bordo destro della
+        pagina.
+      </p>
+
+      <article>
+        <p class="absolute">
+          Questo paragrafo è posizionato con "position: absolute".
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
