@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: STICKY</title>
+    <style>
+      body {
+        background-color: rgb(207, 207, 201);
+        margin: 0;
+      }
+
+      .sticky {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 1em 2em;
+        background-color: rgb(212, 39, 224);
+        color: white;
+        /* metto position fixed */
+        position: sticky;
+        /* il valore di soglia di decide con top, bottom, left, right */
+        top: 0; /* -classicone- */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Position: fixed</h2>
+    </header>
+    <main>
+      <p>
+        La proprietà "position" determina il posizionamento di un elemento. Non
+        deve venire intesa come proprietà di "impaginazione" (per quello c'è
+        soprattutto "display"), ma può venire utile in diverse situazioni per
+        alterare la visibilità o il posizionamento di un elemento in
+        particolare, magari in relazione anche agli altri circostanti.
+      </p>
+      <p>
+        Il valore "sticky" di position attribuisce un comportamento "ibrido" tra
+        position: "relative" e position: "fixed". Questo perchè l'elemento
+        seguirà il flow della pagina allo scorrimento fino al raggiungimento di
+        un determinato "punto di soglia" (threshold); una volta raggiunto il
+        breakpoint l'elemento con sticky si comporterà effettivamente come un
+        position "fixed".
+      </p>
+
+      <!-- <article> -->
+      <!-- devo rendere questo <p> figlio diretto del main, perchè è il main che risulta
+            più alto del corrente viewport e innesca il meccanismo di scroll -->
+      <p class="sticky">
+        Questo paragrafo è posizionato con "position: sticky".
+      </p>
+      <!-- </article> -->
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo consequuntur rerum iure consectetur, possimus fuga. Quam,
+        molestias quae. Maiores ad veniam tenetur tempora repellat sit, minima
+        provident debitis quibusdam?
+      </p>
+    </main>
+  </body>
+</html>

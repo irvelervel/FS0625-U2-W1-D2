@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: ABSOLUTE+RELATIVE</title>
+    <style>
+      body {
+        background-color: rgb(207, 207, 201);
+        margin: 0;
+      }
+
+      .absolute {
+        background-color: deepskyblue;
+        color: white;
+        margin: 0;
+        position: absolute;
+      }
+
+      .container {
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        position: relative;
+      }
+
+      .card {
+        width: 250px;
+        height: 300px;
+        background-color: rgb(195, 255, 255);
+        border: 1px solid blue;
+        border-radius: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+      }
+
+      .new {
+        padding: 0.25em 0.5em;
+        background-color: rgb(244, 52, 52);
+        color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: -12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Position: absolute+relative</h2>
+    </header>
+    <main>
+      <p>
+        La proprietà "position" determina il posizionamento di un elemento. Non
+        deve venire intesa come proprietà di "impaginazione" (per quello c'è
+        soprattutto "display"), ma può venire utile in diverse situazioni per
+        alterare la visibilità o il posizionamento di un elemento in
+        particolare, magari in relazione anche agli altri circostanti.
+      </p>
+      <p>
+        La regola completa per un elemento posizionato in absolute è la
+        seguente: vengono ricercati degli elementi GENITORE posizionati: in caso
+        esistano, verranno presi come riferimenti per l'elemento in absolute; in
+        loro assenza, vengono utilizzati come riferimenti i bordi della pagina.
+      </p>
+
+      <article class="card">
+        <h4>Cane peloso</h4>
+        <p>Ecco un cane peloso in offerta!</p>
+        <img src="https://placedog.net/150/150" />
+        <span class="new">NOVITÀ</span>
+      </article>
+      <article class="card">
+        <h4>Cane peloso</h4>
+        <p>Ecco un cane peloso in offerta!</p>
+        <img src="https://placedog.net/150/150" />
+        <span class="new">NOVITÀ</span>
+      </article>
+      <article class="card">
+        <h4>Cane peloso</h4>
+        <p>Ecco un cane peloso in offerta!</p>
+        <img src="https://placedog.net/150/150" />
+        <span class="new">NOVITÀ</span>
+      </article>
+
+      <div class="container">
+        <article>
+          <p class="absolute">
+            Questo paragrafo è posizionato con "position: absolute".
+          </p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
