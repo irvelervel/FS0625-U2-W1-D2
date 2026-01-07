@@ -1,0 +1,30 @@
+header {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  border: 1px solid black;
+}
+
+section:first-of-type {
+  /* PRIMA DELLE 2 SECTION, ORSO */
+  float: left;
+  margin-right: 1em;
+}
+
+.footer {
+  padding: 1em 0;
+  background-color: rgb(57, 57, 237);
+  color: white;
+  text-align: center;
+  clear: left;
+}
