@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-INDEX in CSS</title>
+    <style>
+      #container {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        position: relative;
+      }
+
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        position: absolute;
+      }
+
+      .box:nth-of-type(1) {
+        background-color: red;
+      }
+      .box:nth-of-type(2) {
+        background-color: green;
+        left: 30px;
+        top: 30px;
+      }
+      .box:nth-of-type(3) {
+        background-color: blue;
+        left: 60px;
+        top: 60px;
+      }
+
+      .box:nth-of-type(1):hover,
+      .box:nth-of-type(2):hover,
+      .box:nth-of-type(3):hover {
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>La proprietà Z-INDEX in CSS</h2>
+      <p>
+        Tradizionalmente, l'ordine di disegno degli elementi in HTML è
+        determinato dal loro ordine fisico all'interno del documento.
+      </p>
+    </header>
+    <main>
+      <section id="container">
+        <article class="box"></article>
+        <article class="box"></article>
+        <article class="box"></article>
+        <!-- l'ultimo tradizionalmente è quello più visibile perchè è disegnato per ultimo! -->
+      </section>
+    </main>
+  </body>
+</html>
